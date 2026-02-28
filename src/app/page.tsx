@@ -1,141 +1,107 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      <div className="bg-amber-400">
-        <header className="w-full px-8 py-4 flex items-center justify-between sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm ">
-          <div className="text-2xl font-bold text-gray-900">
-            Adiya<span className="text-orange-500">.</span>
-          </div>
+    <div className="flex flex-col min-h-screen bg-neutral-900">
 
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-            <a
-              href="#about"
-              className="relative hover:text-orange-500 transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-500 hover:after:w-full after:transition-all"
-            >
-              About
-            </a>
-            <a
-              href="#services"
-              className="relative hover:text-orange-500 transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-500 hover:after:w-full after:transition-all"
-            >
-              Services
-            </a>
-            <a
-              href="#projects"
-              className="relative hover:text-orange-500 transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-500 hover:after:w-full after:transition-all"
-            >
-              Projects
-            </a>
-          </div>
-
-          <a
-            href="#contact"
-            className="px-5 py-2 rounded-lg bg-orange-500 text-white border border-orange-500 hover:bg-orange-600 hover:border-orange-600 shadow transition"
-          >
-            Contact Meh brudda
-          </a>
-        </header>
-
-        <div className="bg-amber-400 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 md:px-12 py-32 gap-8">
-          {}
-          <div className="flex-1 text-center md:text-left space-y-6 h-140">
-            <h1 className="text-6xl font-extrabold text-gray-900">
-              hello there <span className="text-orange-500"></span>
-            </h1>
-            <p className="text-gray-700 text-lg md:text-xl max-w-md mx-auto md:mx-0"></p>
-          </div>
-
-          {}
-          <div className="flex-1 flex justify-center md:justify-end">
-            <div className="relative w-64 h-64 md:w-72 md:h-72">
-              <img
-                src="https://i.imgflip.com/5da9r5.png?a490248"
-                alt="my profile"
-                className="rounded-full object-cover shadow-2xl border-4 border-white"
-              />
-            </div>
-          </div>
+    
+      <header className="h-20 w-full px-8 py-4 flex items-center justify-between sticky top-0 z-50 bg-gray-700 backdrop-blur-md border-b border-gray-700 shadow-sm">
+        <div className="text-2xl font-bold text-white">
+          Adiyaballs🤑<span className="text-orange-500">.</span>
         </div>
 
-        <div
-          id="about"
-          className="py-32 bg-yellow-100 h-screen flex items-center justify-center"
-        >
-          <h2 className="text-3xl font-bold text-center">ur here at about </h2>
-          <p className="max-w-xl mx-auto mt-4 text-center text-gray-700">hi</p>
-        </div>
-        <div
-          id="services"
-          className="py-32 bg-green-100 h-screen flex items-center justify-center"
-        >
-          <h2 className="text-3xl font-bold text-center">
-            {" "}
-            ur here at Services
-          </h2>
-       </div>
+        <nav className="flex gap-6">
+          <Link className="text-white hover:text-orange-500" href="/about">
+            about
+          </Link>
+          <Link className="text-white hover:text-orange-500" href="/projects">
+            projects
+          </Link>
+        </nav>
+      </header>
 
-        {}
-        <div
-          id="projects"
-          className="py-32 bg-blue-100 h-screen flex items-center justify-center"
-        >
-          <h2 className="text-3xl font-bold text-center">
-            {" "}
-            ur here at Projects
-          </h2>
-          <p className="max-w-xl mx-auto mt-4 text-center text-gray-700">
-            hello
-          </p>
-        </div>
+      <section className="relative flex flex-1 items-center justify-center overflow-hidden px-8 py-20 bg-neutral-900 text-white">
 
-        {}
-        <div
-          id="contact"
-          className="py-32 bg-gray-200 h-screen flex items-center justify-center"
-        >
-          <h2 className="text-3xl font-bold text-center">
-            ur here at contact me
-          </h2>
-        </div>
+  {/* Background gradient blobs */}
+  <div className="absolute w-[500px] h-[500px] bg-orange-500/20 blur-[140px] rounded-full -top-20 -left-20"></div>
+  <div className="absolute w-[500px] h-[500px] bg-pink-500/20 blur-[140px] rounded-full bottom-0 right-0"></div>
 
-        {}
-        <footer className="bg-gray-900 text-white py-10 mt-auto py-2">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
-              <div>
-                <h2 className="text-2xl font-bold">Adiyabals Portfolio</h2>
-                <p className="mt-2 text-gray-400">i like potatoes</p>
-              </div>
+  <div className="relative z-10 max-w-7xl w-full grid md:grid-cols-2 gap-16 items-center">
 
-              <div className="flex space-x-6">
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition"
-                >
-                  Tiktok
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition"
-                >
-                  reddit
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition"
-                >
-                  facebook
-                </a>
-              </div>
-            </div>
+    {/* LEFT SIDE TEXT */}
+    <div className="flex flex-col gap-6">
+      <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        begginer friendly
+        <span className="block bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+          digital portfollio i made
+        </span>
+      </h1>
 
-            {}
-          </div>
-        </footer>
+      <p className="text-gray-400 max-w-lg">
+        yes i am extremly bad at coding so i dont have any other projects 
+      </p>
+
+      <div className="flex gap-4 mt-4">
+  <Link
+    href="/projects"
+    className="px-6 py-3 bg-orange-500 text-black font-semibold rounded-2xl hover:scale-105 transition"
+  >
+    View Projects
+  </Link>
+
+<Link
+  href="/contact"
+  className="px-6 py-3 border border-gray-600 rounded-2xl hover:bg-white hover:text-black transition"
+>
+  Contact Me
+</Link>
+  
+</div>
+    </div>
+
+    {/* RIGHT SIDE MOCK CARD */}
+    <div className="relative">
+      <div className="bg-neutral-800/70 backdrop-blur-xl border border-neutral-700 rounded-3xl p-8 shadow-2xl">
+
+        <div className="h-40 bg-gradient-to-br from-orange-500/40 to-pink-500/40 rounded-2xl mb-6"></div>
+
+        <h3 className="text-xl font-semibold mb-2">Featured Project</h3>
+        <p className="text-gray-400 text-sm">so i dont have anything yet please forgive.
+        </p>
+
       </div>
-    </>
+    </div>
+
+  </div>
+</section>
+
+      
+      {<footer className="bg-gray-900 text-white py-6 h-30">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div>
+            <h2 className="text-2xl font-bold">Adiyaballs portfollio</h2>
+            <p className="mt-1 text-gray-400">niche bahbe👍🏼👍🏼</p>
+          </div>
+
+          <div className="flex space-x-6">
+            <Link href="https://tiktok.com" className="text-gray-400 hover:text-white">
+              Tiktok 
+              search jelbert52
+            </Link>
+            <Link href="https://discord.com/" className="text-gray-400 hover:text-white">
+              discord
+              search adka_tuff_boii1232
+            </Link>
+            <Link href="https://facebook.com" className="text-gray-400 hover:text-white">
+              Facebook
+              search Adiya Bal
+            </Link>
+          </div>
+        </div>
+      </footer> }
+
+    </div>
   );
-}
+};
+
+export default Home;
