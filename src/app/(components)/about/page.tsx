@@ -47,32 +47,32 @@ const Page = () => {
 
       <div className="flex flex-wrap justify-center gap-4">
 
-        <div className="flex items-center gap-2 bg-black/60 border border-amber-400/40 px-5 py-2 rounded-xl hover:scale-105 transition">
-          <img
-            src="https://www.ravedigital.agency/wp-content/uploads/2015/06/html5.webp"
-            alt="HTML"
-            className="h-6 w-6 object-contain"
-          />
-          HTML
-        </div>
+        <div className="flex items-center gap-2 bg-black/60 text-white border border-amber-400/40 px-5 py-2 rounded-xl hover:scale-105 transition">
+  <img
+    src="https://www.ravedigital.agency/wp-content/uploads/2015/06/html5.webp"
+    alt="HTML"
+    className="h-6 w-6 object-contain"
+  />
+  HTML
+</div>
 
-        <div className="flex items-center gap-2 bg-black/60 border border-amber-400/40 px-5 py-2 rounded-xl hover:scale-105 transition">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s"
-            alt="JavaScript"
-            className="h-6 w-6 object-contain"
-          />
-          JavaScript
-        </div>
+<div className="flex items-center gap-2 bg-black/60 text-white border border-amber-400/40 px-5 py-2 rounded-xl hover:scale-105 transition">
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9uzErWz9EXqZDxZ5lP9aYpMz8eK6rr5X3w&s"
+    alt="JavaScript"
+    className="h-6 w-6 object-contain"
+  />
+  JavaScript
+</div>
 
-        <div className="flex items-center gap-2 bg-black/60 border border-amber-400/40 px-5 py-2 rounded-xl hover:scale-105 transition">
-          <img
-            src="https://files.raycast.com/mbor6bxq93gsd5dsmvrhmn31p62l"
-            alt="Tailwind"
-            className="h-6 w-6 object-contain"
-          />
-          Tailwind
-        </div>
+<div className="flex items-center gap-2 bg-black/60 text-white border border-amber-400/40 px-5 py-2 rounded-xl hover:scale-105 transition">
+  <img
+    src="https://files.raycast.com/mbor6bxq93gsd5dsmvrhmn31p62l"
+    alt="Tailwind"
+    className="h-6 w-6 object-contain"
+  />
+  Tailwind
+</div>
 
       </div>
     </div>
